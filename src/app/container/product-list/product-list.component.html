@@ -29,7 +29,7 @@
                 </div>
 
                 <div id="product_list_card_name">
-                    {{product.name}}
+                   <b> {{product.name}}</b>
                 </div>
 
                 <div id="product_list_card_info">
@@ -40,10 +40,13 @@
                     {{product.color.length}} Colors . Best Seller
                 </div>
             </div>
-
+            <div [ngStyle]="{fontWeight: 'bold' , color: product.is_in_inventory ? 'Green' : 'Red'}" class="stock_availability_container">
+                {{product.is_in_inventory ? "Available" : "Out of stock"}}
+             </div>
             <div class="add_to_cart_btn">
-                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <button class="btn btn-primary btn-sm" [disabled]= "!product. is_in_inventory">Add to Cart</button>
             </div>
+            
         </div>
 
 
