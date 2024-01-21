@@ -14,3 +14,9 @@
     display: flex;
     gap: 1rem;
 }
+
+.login_signup_button{
+    height: 30px;
+    font-size: 12px;
+    border-radius:30px;
+}
