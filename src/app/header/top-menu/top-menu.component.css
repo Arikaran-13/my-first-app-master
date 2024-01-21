@@ -1,0 +1,16 @@
+.eKart-top-menu{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding-top: 3px;
+    padding-right: 30px;
+    font-size: 12px;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.top-menu-links{
+    display: flex;
+    gap: 1rem;
+}

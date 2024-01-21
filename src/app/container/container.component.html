@@ -1,0 +1,24 @@
+<div class="product_list_search">
+<!-- <img [src] = "product.image" alt="Iphone_15_pro_max" style="height: 200px; width: 300px;">
+<p>Name: {{product.name}}</p>
+<p>Price: {{"$"+product.price}}</p>
+<p>Color: {{product.color}}</p>
+<p>{{product.inStock > 0 ? "Only "+product.inStock +" is available": "Out of Stock"}}</p>
+<p>Discounted price: {{"$"+getDiscountedPrice().toFixed(2)}}</p>
+<div class="product-card-btns">
+<button class="btn btn-success" (click)="handleIncrementalButtonClick($event)">+</button>
+<button type="button" [disabled]="!(product.inStock>0)" class="btn btn-success buy-product-btn">
+{{addtoCartButtonText}}
+</button>
+<button class="btn btn-success" (click)="decrementCartValue()">-</button>
+</div>
+<input type="text" (input)="inputEventOccured($event)">
+<span>name : {{name}}</span> -->
+<app-search></app-search>
+</div>
+<!-- <div *ngFor = "let item of [1,2,3,4,5]">
+    <p> Item : {{item}}</p>
+</div> -->
+<div class="product_list_container">
+    <product-list></product-list>
+</div>

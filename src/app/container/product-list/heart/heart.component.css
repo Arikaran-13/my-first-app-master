@@ -1,0 +1,9 @@
+#product_list_card_heart_icon{
+    padding: 10px 10px;
+    width:2.5rem;
+    /* margin-left: auto; */
+ }
+
+ .heart{
+    cursor: pointer;
+ }

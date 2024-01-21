@@ -1,0 +1,51 @@
+<div class="products_container">
+    <div class="product_list-items">
+        <div class="product_list_item_card" *ngFor="let product of products">
+          
+           <div class="product_list_top">
+            <heart-icon></heart-icon>
+            <span class="discount_price_container" *ngIf="product.discount">
+                {{product.discount}} % Off
+            </span>
+           </div>
+            
+            <div class="product-list_card_content">
+
+                <div id="product_list_card_image">
+                    <img [src]="product.imageURL" class="productImage" alt={{product.slog}}>
+                </div>
+
+                <div id="product_list_card_price" *ngIf="product.discount">
+                    <del>₹{{product.price}}</del> 
+                    <ins class="newPrice"><b>
+                        ₹{{
+                            (product.price - (product.price * product.discount/100)).toFixed(0)
+                        }}
+                    </b></ins>
+                </div>
+
+                <div id="product_list_card_price" *ngIf="!product.discount">
+                    ₹{{product.price}}
+                </div>
+
+                <div id="product_list_card_name">
+                    {{product.name}}
+                </div>
+
+                <div id="product_list_card_info">
+                    {{product.gender}} . {{product.category}} . {{product.brand}}
+                </div>
+
+                <div id="product_list_card_colors">
+                    {{product.color.length}} Colors . Best Seller
+                </div>
+            </div>
+
+            <div class="add_to_cart_btn">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+            </div>
+        </div>
+
+
+    </div>
+</div>

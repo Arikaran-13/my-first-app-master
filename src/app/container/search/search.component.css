@@ -1,0 +1,19 @@
+.ekart-search-product-input{
+    width: 30rem;
+    padding: 8px;
+    background-color: rgba(211, 211, 211, 0.7);
+}
+.ekart-search-product-btn{
+   padding: 8px;
+   width: 7rem;
+   background-color: rgba(0, 0, 0, 0.849);
+   color:white;
+   font-weight: bold;   
+}
+.search_result{
+    padding: 10px;
+    margin-left: 5rem;
+    /* background-color: lightblue; */
+    text-align: left;
+    font-size: large;
+}

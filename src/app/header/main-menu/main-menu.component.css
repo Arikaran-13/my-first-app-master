@@ -1,0 +1,10 @@
+.eKart-main-menu:nth-last-child(1){
+  margin-right: 12rem;
+}
+
+.eKart-main-menu{
+   display: flex;
+   width: 100%;
+   text-align: center;
+   gap:2rem;
+}

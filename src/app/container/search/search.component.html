@@ -1,0 +1,10 @@
+<div class="ekart-search-product">
+<input type="search" class="ekart-search-product-input" (input)="updateSearchResult($event)" [value]="searchResult">
+
+<button class="ekart-search-product-btn">Search</button>
+</div>
+<div class="search_result">
+    <p *ngIf="searchResult.length>0">
+        <strong>Search Result for: </strong> {{searchResult}}
+    </p>
+</div>
