@@ -9,11 +9,21 @@
    background-color: rgba(0, 0, 0, 0.849);
    color:white;
    font-weight: bold;   
+   cursor: pointer;
 }
 .search_result{
     padding: 10px;
     margin-left: 5rem;
-    /* background-color: lightblue; */
     text-align: left;
     font-size: large;
+}
+
+.ekart-search-product-btn-disabled{
+  cursor: not-allowed;
+  padding: 8px;
+   width: 7rem;
+   color:white;
+   font-weight: bold;
+  background-color: rgb(97, 95, 95);
+
 }
