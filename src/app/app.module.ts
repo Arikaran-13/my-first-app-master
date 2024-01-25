@@ -10,6 +10,7 @@ import { ContainerComponent } from './container/container.component';
 import { SearchComponent } from './container/search/search.component';
 import { ProductListComponent } from './container/product-list/product-list.component';
 import { HeartComponent } from './container/product-list/heart/heart.component';
+import { ProductComponent } from './container/product-list/product/product.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HeartComponent } from './container/product-list/heart/heart.component';
     ContainerComponent,
     SearchComponent,
     ProductListComponent,
-    HeartComponent
+    HeartComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule
