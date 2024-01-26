@@ -1,15 +1,21 @@
 <form class="filter-btns">
     <p>Filter: </p>
+
     <div class="all-radio-btn">
-        <input type="radio" class="radio" value="allProduct" name="filterproduct">
+        <input type="radio" class="radio" value="all" name="filterproduct" [(ngModel)]="currentSelectedRadioButton"
+        (change)="onChangeFilterRadioBtn()"
+        >
         <label>{{"All("+allProduct+")"}}</label>
     </div>
+
     <div class="in-stock-btn">
-        <input type="radio" class="radio" value="true" name="filterproduct">
+        <input type="radio" class="radio" value="true" name="filterproduct" [(ngModel)]="currentSelectedRadioButton" (change)="onChangeFilterRadioBtn()">
         <label>{{"In Stock("+inStockProduct+")"}}</label>
     </div>
+
     <div class="out-of-stock-btn">
-        <input type="radio" class="radio" value="false" name="filterproduct">
+        <input type="radio" class="radio" value="false" name="filterproduct" [(ngModel)]="currentSelectedRadioButton" (change)="onChangeFilterRadioBtn()">
         <label>{{"Out of Stock("+outOfStockProduct+")"}}</label>
     </div>
+
 </form>

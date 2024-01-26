@@ -469,4 +469,10 @@ export class ProductListComponent {
     allProduct:number = this.products.length;
     inStockProduct:number= this.products.filter(product=> product.is_in_inventory).length;
     outOfStockProduct:number = this.products.filter(product=> !product.is_in_inventory).length;
-}
+    selectedFilterRadioBtn:string = "all";
+    
+    handleOnSelectedRadioBtn(data:string){
+       console.log("From parent component product-list: ",data);
+       this.selectedFilterRadioBtn = data;
+    }
+}  

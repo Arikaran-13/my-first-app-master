@@ -12,6 +12,7 @@ import { ProductListComponent } from './container/product-list/product-list.comp
 import { HeartComponent } from './container/product-list/heart/heart.component';
 import { ProductComponent } from './container/product-list/product/product.component';
 import { FilterComponent } from './container/product-list/filter/filter.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { FilterComponent } from './container/product-list/filter/filter.componen
     FilterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
