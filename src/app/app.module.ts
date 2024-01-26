@@ -11,6 +11,7 @@ import { SearchComponent } from './container/search/search.component';
 import { ProductListComponent } from './container/product-list/product-list.component';
 import { HeartComponent } from './container/product-list/heart/heart.component';
 import { ProductComponent } from './container/product-list/product/product.component';
+import { FilterComponent } from './container/product-list/filter/filter.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ProductComponent } from './container/product-list/product/product.compo
     SearchComponent,
     ProductListComponent,
     HeartComponent,
-    ProductComponent
+    ProductComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule

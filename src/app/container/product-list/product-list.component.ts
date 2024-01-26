@@ -465,4 +465,8 @@ export class ProductListComponent {
             slug: "converse-chuck-taylor-all-star",
         },
     ];
+
+    allProduct:number = this.products.length;
+    inStockProduct:number= this.products.filter(product=> product.is_in_inventory).length;
+    outOfStockProduct:number = this.products.filter(product=> !product.is_in_inventory).length;
 }

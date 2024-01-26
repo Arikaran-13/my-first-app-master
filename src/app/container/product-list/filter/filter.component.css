@@ -1,0 +1,10 @@
+.filter-btns{
+    display: flex;
+    gap: 1rem;
+    font-weight:bold;
+    margin-left: 7rem;
+}
+
+label{
+    margin-left: 0.5rem;
+}
