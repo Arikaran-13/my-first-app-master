@@ -1,11 +1,12 @@
-import { Component } from "@angular/core";
+import { AfterContentInit, Component, Input, OnChanges, OnInit, SimpleChanges } from "@angular/core";
+import { ObservedValueUnionFromArray } from "rxjs";
 
 @Component({
     selector: "product-list",
     templateUrl: "./product-list.component.html",
     styleUrls: ["./product-list.component.css"]
 })
-export class ProductListComponent {
+export class ProductListComponent{
     products: any[] = [
         {
             id: 1,
@@ -470,9 +471,14 @@ export class ProductListComponent {
     inStockProduct:number= this.products.filter(product=> product.is_in_inventory).length;
     outOfStockProduct:number = this.products.filter(product=> !product.is_in_inventory).length;
     selectedFilterRadioBtn:string = "all";
-    
+
+    @Input()
+    currentSearchText:string="";
+
     handleOnSelectedRadioBtn(data:string){
        console.log("From parent component product-list: ",data);
+       console.log("CurrentSearchText from product list component",this.currentSearchText);
        this.selectedFilterRadioBtn = data;
     }
+    
 }  
