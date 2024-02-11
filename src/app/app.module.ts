@@ -13,6 +13,7 @@ import { HeartComponent } from './container/product-list/heart/heart.component';
 import { ProductComponent } from './container/product-list/product/product.component';
 import { FilterComponent } from './container/product-list/filter/filter.component';
 import { FormsModule } from '@angular/forms';
+import { ProductDetailsComponent } from './container/product-details/product-details.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     ProductListComponent,
     HeartComponent,
     ProductComponent,
-    FilterComponent
+    FilterComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -21,8 +21,18 @@ export class SearchComponent{
     //     console.log(this.searchResult);
     // }
 
-    handleSearchBtnClick():void{
-        console.log("From search component btn click");
+    // handleSearchBtnClick():void{
+    //     console.log("From search component btn click");
+    //     this.currentSearchResultEvent.emit(this.searchResult);
+    // }
+
+    // handleInputEvent():void{
+    //     console.log("input event occured ",this.searchResult);
+        
+    // }
+
+    handleOnButtonClick(searchTextVariable:HTMLInputElement):void{
+        this.searchResult = searchTextVariable.value;
         this.currentSearchResultEvent.emit(this.searchResult);
     }
 }

@@ -20,5 +20,11 @@
     <p> Item : {{item}}</p>
 </div> -->
 <div class="product_list_container">
-    <product-list [currentSearchText]="searchResultFromSearchComponent"></product-list>
+    <product-list [currentSearchText]="searchResultFromSearchComponent" #productListComponent></product-list>
+</div>
+
+<div>
+    <product-detail *ngIf="productListComponent.selectedProduct"
+    [selectedProductDetail] = "productListComponent.selectedProduct"
+    ></product-detail>
 </div>

@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { ProductDetailsComponent } from "./product-details/product-details.component";
 
 @Component({
     selector: "app-container",
@@ -8,9 +9,13 @@ import { Component } from "@angular/core";
 export class ContainerComponent{
     
     searchResultFromSearchComponent:string = "";
+    
+    
     listenSearchResultEvent(event:string):void{
         console.log("Data from child component",event);
        this.searchResultFromSearchComponent = event;
        console.log(this.searchResultFromSearchComponent);
+
     }
+
 }

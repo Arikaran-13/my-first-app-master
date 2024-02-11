@@ -1,5 +1,6 @@
 import { AfterContentInit, Component, Input, OnChanges, OnInit, SimpleChanges } from "@angular/core";
 import { ObservedValueUnionFromArray } from "rxjs";
+import { Product } from "src/app/Models/Product";
 
 @Component({
     selector: "product-list",
@@ -7,7 +8,8 @@ import { ObservedValueUnionFromArray } from "rxjs";
     styleUrls: ["./product-list.component.css"]
 })
 export class ProductListComponent{
-    products: any[] = [
+    selectedProduct : Product;
+    products: Product[] = [
         {
             id: 1,
             name: "Nike React Infinity Run Flyknit",
@@ -475,10 +477,17 @@ export class ProductListComponent{
     @Input()
     currentSearchText:string="";
 
+
     handleOnSelectedRadioBtn(data:string){
        console.log("From parent component product-list: ",data);
        console.log("CurrentSearchText from product list component",this.currentSearchText);
        this.selectedFilterRadioBtn = data;
     }
+
+    handleOnClickProductSelection(product:Product):void{
+        this.selectedProduct=product;
+        console.log("handle on click product selected",product.name);
+    }
+
     
 }  
