@@ -1,7 +1,7 @@
 <div class="ekart-search-product">
 <input type="search" class="ekart-search-product-input" #searchTextVariable>
 
-<button [ngClass]="{'ekart-search-product-btn': searchResult.length>0, 'ekart-search-product-btn-disabled': searchResult.length<=0}" (click)="handleOnButtonClick(searchTextVariable)">Search</button>
+<button [ngClass]="{'ekart-search-product-btn': searchResult.length>0, 'ekart-search-product-btn-disabled': searchResult.length<=0}" (click)="handleOnButtonClick()">Search</button>
 </div>
 <div class="search_result">
     <p *ngIf="searchResult.length>0">
